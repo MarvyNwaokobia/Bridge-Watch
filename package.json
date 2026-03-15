@@ -1,0 +1,39 @@
+{
+  "name": "stellar-bridge-watch",
+  "version": "0.1.0",
+  "description": "Open-source monitoring platform for cross-chain asset bridges, DEX liquidity, and bridged asset health on the Stellar network",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "build": "npm run build --workspaces --if-present",
+    "build:backend": "npm run build --workspace=backend",
+    "build:frontend": "npm run build --workspace=frontend",
+    "test": "npm run test --workspaces --if-present",
+    "test:backend": "npm run test --workspace=backend",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StellaBridge/Bridge-Watch.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "stellar",
+    "bridge",
+    "monitoring",
+    "defi",
+    "soroban",
+    "cross-chain",
+    "liquidity",
+    "analytics"
+  ]
+}
